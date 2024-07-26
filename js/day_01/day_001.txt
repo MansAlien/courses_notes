@@ -1,0 +1,53 @@
+
+                                                                                            #################################
+                                                                                            #########    Day 001    #########
+                                                                                            #################################
+
+========================
+=== 001_Introduction ===
+========================
+
+1. What is Javascript?
+  - Scripting or Programming Language
+  - Working on Client Side & Server Side
+  - Implement Complex Features on a web page by making it interactive
+
+---------------------------------------------------
+2. What is Javascript can do?
+  - Dynamically Update Content
+  - Manipulating HTML & Css
+  - Animate Images & Content & Create Imgae Gallery
+  - Manipulate And Validate Data
+  - Controle Multimedia [Audio, Video, etc.]
+  - Web Browser Games
+  - Mobile Apps
+
+
+---------------------------------------------------
+3. Course Content
+  - Core Language
+  - DOM
+  - BOM
+  - OOP
+  - Es6, Es7
+  - Practice
+
+4. What i need to learn js?
+  - HTML
+  - Css
+  - Text Editor
+  - Internet Browser
+  - Windows & Internet Knowledge
+############################################################################################################
+
+========================
+=== 002_How To Study ===
+========================
+- Focus
+- Always Search
+- Ask how to fix not fix 
+- Start Ideo
+- Do the assignments
+- Take Notes
+- Problem Solving
+

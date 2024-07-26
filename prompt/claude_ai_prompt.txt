@@ -1,0 +1,35 @@
+Prompt: Convert Text File to Styled HTML Document
+Please convert the following text file content into a styled HTML document. Use the structure and styling described below to create a visually appealing, dark-themed page suitable for a programming course. The document should be a single HTML file with embedded CSS for easy saving as a PDF.
+HTML Structure:
+
+Use a main <div class="container"> to wrap all content.
+Create a <h1> title at the top.
+Divide the content into sections, each wrapped in a <div class="section">.
+Use appropriate heading levels (<h2>, <h3>) for section and subsection titles.
+Use unordered lists (<ul>) for bullet points.
+For grid-like layouts, use <div class="grid"> with child <div class="grid-item"> elements.
+
+Styling Guidelines:
+
+Use a dark background (#1a202c) for the body and a slightly lighter shade (#2d3748) for sections.
+Set the main text color to a light gray (#e2e8f0).
+Use purple (#9f7aea) for the main title.
+Use pink (#ed64a6) for section headings.
+Use a lighter purple (#b794f4) for subsection headings.
+Apply rounded corners (border-radius: 8px) and subtle shadows to sections.
+Use a sans-serif font, preferably Arial or a system font stack.
+Make the layout responsive using CSS Grid or Flexbox.
+
+Icon Usage:
+
+Include Font Awesome for icons: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">.
+Add relevant icons to section headings and list items where appropriate.
+Use colorful icons in the grid layouts to add visual interest.
+
+Additional Notes:
+
+Ensure the CSS is embedded in a <style> tag within the <head> of the HTML document.
+The document should be responsive and look good on both desktop and mobile devices.
+Optimize the design for readability and visual appeal when saved as a PDF.
+
+Please process the following text content and generate the complete HTML document based on these guidelines:

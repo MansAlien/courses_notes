@@ -1,0 +1,58 @@
+                                                                                            #################################
+                                                                                            #########    Day 001    #########
+                                                                                            #################################
+
+========================
+=== 001_Introduction ===
+========================
+
+1.What is Python?
+  - Open Source 
+  - Interpreted
+  - Interactive
+
+---------------------------------------------------
+2.Why Python?
+  - Easy to install
+  - Clean & Easy
+  - Error Handeling
+  - Debugging is Easy
+  - Cross Platform
+  - Expressive
+  - OOP
+  
+  - Integrated
+  - Support Modules and Packages
+  - Large Set Of Liberaries and Plugings
+  - Memory Management (Garbage Collection)
+  - Multi Purpose
+  - Greate Community
+  - Growing Fast
+
+
+---------------------------------------------------
+3.What is Python used for?
+  - Web Development
+  - Games 
+  - Desktop Apps
+  - Hacking 
+  - Machine Learining & Data Science
+  - AI & Robots
+  - Automation
+  - Web Scrapping
+  - Android Games
+
+############################################################################################################
+
+========================
+=== 002_What I Need? ===
+========================
+- Text Editor or IDE
+- Download Python
+- Python Extension
+- Learn Command Line
+- Download Cmder
+- Knowledge in Programming 
+- Version
+- Path Knowledge
+

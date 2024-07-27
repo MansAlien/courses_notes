@@ -1,35 +1,45 @@
-Prompt: Convert Text File to Styled HTML Document
-Please convert the following text file content into a styled HTML document. Use the structure and styling described below to create a visually appealing, dark-themed page suitable for a programming course. The document should be a single HTML file with embedded CSS for easy saving as a PDF.
-HTML Structure:
+# Prompt: Create a Styled HTML Document for a Python Course
 
-Use a main <div class="container"> to wrap all content.
-Create a <h1> title at the top.
-Divide the content into sections, each wrapped in a <div class="section">.
-Use appropriate heading levels (<h2>, <h3>) for section and subsection titles.
-Use unordered lists (<ul>) for bullet points.
-For grid-like layouts, use <div class="grid"> with child <div class="grid-item"> elements.
+Create an HTML document for Day 2 of a Python course. The document should have a dark theme and be styled for both web viewing and PDF export. Follow these specifications:
 
-Styling Guidelines:
+1. Document Structure:
+   - Use HTML5 doctype and structure
+   - Set the language to English
+   - Include a responsive viewport meta tag
 
-Use a dark background (#1a202c) for the body and a slightly lighter shade (#2d3748) for sections.
-Set the main text color to a light gray (#e2e8f0).
-Use purple (#9f7aea) for the main title.
-Use pink (#ed64a6) for section headings.
-Use a lighter purple (#b794f4) for subsection headings.
-Apply rounded corners (border-radius: 8px) and subtle shadows to sections.
-Use a sans-serif font, preferably Arial or a system font stack.
-Make the layout responsive using CSS Grid or Flexbox.
+2. Styling:
+   - Use internal CSS (within a <style> tag)
+   - Dark theme: Background #1a202c, Text #e2e8f0
+   - Main container: Max width 800px, centered
+   - Sections: Background #2d3748, rounded corners (8px), box shadow
+   - Headings: H1 (Purple #9f7aea), H2 (Pink #ed64a6), H3 (Light purple #b794f4)
+   - Use a sans-serif font, preferably Arial
+   - Make the layout responsive (adjust for mobile devices)
 
-Icon Usage:
+3. Content Sections:
+   a. Title: "Python Course - Day 002" with a Python icon
+   b. Section 1: "003_ Syntax and your first app"
+      - Include bullet points about Python syntax
+      - Show a simple Python code example in a pre-formatted block
+   c. Section 2: "004_ Comment"
+      - Explain Python comments with examples
+      - Include an "Important Notes" subsection
+      - Show a code example with comments
+   d. Section 3: "Advantages of Comments in Python"
+      - Create a grid layout with 10 items, each representing an advantage
+      - Each grid item should have an icon, title, and brief description
 
-Include Font Awesome for icons: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">.
-Add relevant icons to section headings and list items where appropriate.
-Use colorful icons in the grid layouts to add visual interest.
+4. Icons:
+   - Include Font Awesome for icons (version 6.4.0 from cdnjs)
+   - Use appropriate icons for each section and grid item
 
-Additional Notes:
+5. Print Styling:
+   - Ensure colors are preserved when printing or exporting to PDF
+   - Force page break before the "Advantages" section
+   - Prevent sections from breaking across pages
 
-Ensure the CSS is embedded in a <style> tag within the <head> of the HTML document.
-The document should be responsive and look good on both desktop and mobile devices.
-Optimize the design for readability and visual appeal when saved as a PDF.
+6. Additional Features:
+   - Make code blocks and grid items stand out with a slightly different background (#4a5568)
+   - Ensure proper spacing and margins for readability
 
-Please process the following text content and generate the complete HTML document based on these guidelines:
+Remember to make the document accessible and ensure it looks good on both web browsers and when exported to PDF.

@@ -1,0 +1,56 @@
+#################################
+#########    Day 003    #########
+#################################
+
+==============================
+=== 005_ Dealing with data ===
+==============================
+
+- Our apps contains code + data.
+- Code: is the lines you write to  manage and deal with data.
+- To structure the data we need to catigorize [Num, String, Booleans]
+  - Num => Student's age, Student's phone number, and Teacher's salary
+  - String => Studnet's name, Teacher's name, and Event's name
+  - Booleans => Teacher got salary or not, Student's age is suitable or not
+
+- The data is stored at the computer memory 
+- We use variable  to refer to this data.
+- Variables are not containing the the data itself, there're only refering to it at the memory.
+- Code is using data to perform operation [Add, Edit, Delete]
+
+############################################################################################################
+
+=====================================
+=== 006_ Some Data Types Overview ===
+=====================================
+
+#--------------------------------#
+- type()
+- All data in python is object
+#--------------------------------#
+
+```
+  # int
+  print(type(10)) 
+  print(type(-10))
+  
+  # float
+  print(type(10.9))
+  print(type(-10.9))
+
+  # str
+  print(type("hello there"))
+
+  # list
+  print(type([1, 2, 3, 4, 5]))
+
+  # tuple
+  print(type((1, 2, 3, 4, 5)))
+
+  # dict
+  print(type({"one":1, "two":2, "three":3}))
+
+  # bool
+  print(type(2==2))
+```
+############################################################################################################

@@ -1,6 +1,6 @@
-# Prompt: Create a Styled HTML Document for a Python Course
+# Prompt: Generate Styled HTML Document for Python Course Content
 
-Create an HTML document for Day 2 of a Python course. The document should have a dark theme and be styled for both web viewing and PDF export. Follow these specifications:
+Using the provided text file content, create an HTML document for a Python course lesson. The document should have a dark theme and be styled for both web viewing and PDF export. Follow these specifications:
 
 1. Document Structure:
    - Use HTML5 doctype and structure
@@ -16,30 +16,32 @@ Create an HTML document for Day 2 of a Python course. The document should have a
    - Use a sans-serif font, preferably Arial
    - Make the layout responsive (adjust for mobile devices)
 
-3. Content Sections:
-   a. Title: "Python Course - Day 002" with a Python icon
-   b. Section 1: "003_ Syntax and your first app"
-      - Include bullet points about Python syntax
-      - Show a simple Python code example in a pre-formatted block
-   c. Section 2: "004_ Comment"
-      - Explain Python comments with examples
-      - Include an "Important Notes" subsection
-      - Show a code example with comments
-   d. Section 3: "Advantages of Comments in Python"
-      - Create a grid layout with 10 items, each representing an advantage
-      - Each grid item should have an icon, title, and brief description
+3. Content Structure:
+   a. Title: Extract the day number from the file name (e.g., "Python Course - Day 003") and include a Python icon
+   b. For each main section (indicated by ===):
+      - Create a new <section> element
+      - Use the section title as an h2 heading
+      - Include an appropriate Font Awesome icon before the heading text
+   c. For subsections (indicated by ---):
+      - Use h3 headings
+   d. Convert bullet points to unordered lists
+   e. Format code examples using <pre> tags with a different background color (#4a5568)
 
 4. Icons:
    - Include Font Awesome for icons (version 6.4.0 from cdnjs)
-   - Use appropriate icons for each section and grid item
+   - Use appropriate icons for each section (you can choose based on the content)
 
 5. Print Styling:
    - Ensure colors are preserved when printing or exporting to PDF
-   - Force page break before the "Advantages" section
    - Prevent sections from breaking across pages
 
 6. Additional Features:
-   - Make code blocks and grid items stand out with a slightly different background (#4a5568)
    - Ensure proper spacing and margins for readability
+   - If there's a list of advantages or key points, consider using a grid layout similar to the "Advantages of Comments in Python" section from the previous example
 
-Remember to make the document accessible and ensure it looks good on both web browsers and when exported to PDF.
+7. Parsing Instructions:
+   - Treat lines starting with '#' as comments or decorative elements, don't include them in the final HTML
+   - Ignore lines that only contain '=======' or '-------'
+   - Convert Markdown-style code blocks (``` or ~~~) to HTML <pre> tags
+
+Remember to make the document accessible and ensure it looks good on both web browsers and when exported to PDF. Adapt the content from the text file to fit this structure, creating a cohesive and visually appealing lesson document.

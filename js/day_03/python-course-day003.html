@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Course - Day 003</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #9f7aea;
+            text-align: center;
+        }
+        h2 {
+            color: #ed64a6;
+        }
+        h3 {
+            color: #b794f4;
+        }
+        section {
+            background-color: #2d3748;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #4a5568;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: #4a5568;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .script-placement {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .script-box {
+            width: 120px;
+            height: 80px;
+            background-color: #4a5568;
+            border: 2px solid #ed64a6;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            text-align: center;
+            position: relative;
+        }
+        .script-box i {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .arrow {
+            font-size: 24px;
+            color: #ed64a6;
+        }
+        .best-practice {
+            border-color: #4fd1c5;
+            background-color: #234e52;
+        }
+        .tooltip {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .script-box:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .script-placement {
+                flex-direction: column;
+            }
+            .script-box {
+                margin-bottom: 20px;
+            }
+            .arrow {
+                transform: rotate(90deg);
+                margin: 10px 0;
+            }
+        }
+        @media print {
+            body {
+                background-color: #1a202c;
+                color: #e2e8f0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            section {
+                background-color: #2d3748;
+                box-shadow: none;
+                border: none;
+                page-break-inside: avoid;
+            }
+            pre {
+                background-color: #4a5568;
+            }
+            .grid-item {
+                background-color: #4a5568;
+            }
+            .script-box {
+                background-color: #4a5568;
+                border-color: #ed64a6;
+                color: #e2e8f0;
+            }
+            .best-practice {
+                background-color: #234e52;
+                border-color: #4fd1c5;
+            }
+            .arrow {
+                color: #ed64a6;
+            }
+            h1 {
+                color: #9f7aea;
+            }
+            h2 {
+                color: #ed64a6;
+            }
+            h3 {
+                color: #b794f4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fab fa-python"></i> Python Course - Day 003</h1>
+
+        <section>
+            <h2><i class="fas fa-file-code"></i> Where to put the code</h2>
+            <p>Let's explore where you can put your JavaScript code in an HTML document:</p>
+
+            <div class="script-placement">
+                <div class="script-box">
+                    <i class="fas fa-head-side"></i>
+                    &lt;head&gt;
+                    <span class="tooltip">Loads early, but may slow page rendering</span>
+                </div>
+                <div class="arrow">→</div>
+                <div class="script-box">
+                    <i class="fas fa-code"></i>
+                    &lt;body&gt; end
+                    <span class="tooltip">Ensures HTML is loaded, but script loads last</span>
+                </div>
+                <div class="arrow">→</div>
+                <div class="script-box best-practice">
+                    <i class="fas fa-file-code"></i>
+                    External file
+                    <span class="tooltip">Best practice: Use with defer attribute in &lt;head&gt;</span>
+                </div>
+            </div>
+
+            <h3>Best Practice: External File with defer</h3>
+            <pre><code>&lt;head&gt;
+    &lt;script src="script.js" defer&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+            <p><i class="fas fa-check-circle"></i> Loads early, runs after HTML is parsed</p>
+            <p><i class="fas fa-check-circle"></i> Improves page load performance</p>
+            <p><i class="fas fa-check-circle"></i> Keeps code organized and cacheable</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-comment"></i> Comments</h2>
+            <ul>
+                <li><i class="fas fa-comment-slash"></i> Single-line comment: <code>//</code></li>
+                <li><i class="fas fa-comments"></i> Multi-line comment: <code>/* */</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-list-ol"></i> Advantages of Comments in JavaScript</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3><i class="fas fa-book-reader"></i> Enhanced Readability</h3>
+                    <p>Makes code easier to understand</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-file-alt"></i> Self-Documenting Code</h3>
+                    <p>Explains the logic behind code choices</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-users"></i> Improved Cooperation</h3>
+                    <p>Helps team members understand and contribute</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-bug"></i> Better Troubleshooting</h3>
+                    <p>Aids in faster debugging and issue resolution</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-sliders-h"></i> Code Control</h3>
+                    <p>Allows turning off code segments for debugging</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-lightbulb"></i> Logic Explanation</h3>
+                    <p>Clarifies complex algorithms and computations</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-tools"></i> Code Maintainability</h3>
+                    <p>Makes future modifications easier</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-recycle"></i> Code Reuse</h3>
+                    <p>Encourages reusability in other parts of the program</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-share-alt"></i> Knowledge Sharing</h3>
+                    <p>Helps share coding expertise with others</p>
+                </div>
+                <div class="grid-item">
+                    <h3><i class="fas fa-graduation-cap"></i> Learning Aid</h3>
+                    <p>Helps understand your own coding style and process</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

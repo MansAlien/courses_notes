@@ -1,0 +1,53 @@
+
+#################################
+#########    Day 003    #########
+#################################
+
+==================================
+=== 005_ Where to put the code ===
+==================================
+
+############################################################################################################
+
+=====================
+=== 006_ Comments ===
+=====================
+
+- single-line comment => //
+- mulit-line comment => /* */
+
+############################################################################################################
+
+============================================
+=== Advantages of Comments in JavaScript ===
+============================================
+1. Enhanced Readability
+Comments help you and others understand the purpose and functionality of your code by clearly stating the reasoning behind it. This is particularly useful for complicated code or stuff you return to after a long break.
+
+2. Code That Documents Itself
+Well-written comments make your code almost self-documenting. Comments that provide the logic behind your coding choices become important resources for future readers who may need to comprehend or alter the code.
+
+3. Improved Cooperation
+In team projects, effective communication is essential for efficient teamwork. They enable other developers to incorporate their contributions easily and rapidly understand the operation of the code.
+
+4. Improved troubleshooting
+By describing the anticipated behavior of different code blocks, comments can serve as useful cues for troubleshooting. This can help to speed up the process of identifying and resolving program faults.
+
+5. Code Control
+Comments let you turn off certain code segments for targeted debugging. This enables you to debug individual software components without interfering with the remainder of the code's execution.
+
+6. Logic Explanation
+If there are complex algorithms or logic buried in the code, comments can explain them. Understanding the reasoning behind intricate computations or decision-making processes can be greatly aided by this.
+
+7. Code Maintainability
+Comments facilitate code maintenance and modification, particularly after prolonged usage. Developers can more confidently and effectively make the necessary modifications to the code by understanding the code's purpose through comments.
+
+8. Code Reuse
+Reusability in other program sections is encouraged by well-written comments that describe a code section's usefulness. This can leverage well-commented existing code, saving time and effort.
+
+9. Knowledge Sharing
+You can impart your coding expertise to colleagues or aspiring developers by using comments as a forum. You can aid in the development of a shared understanding of the codebase by explaining your reasoning and coding decisions.
+
+10. Learning Aid
+Even for yourself, comments can be a very beneficial learning aid. You can learn more about your coding style and process from when you wrote your code by going back and adding comments.
+

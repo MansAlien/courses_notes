@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Course - Day 004: Variables and Code Execution</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #9f7aea;
+            text-align: center;
+        }
+        h2 {
+            color: #ed64a6;
+        }
+        h3 {
+            color: #b794f4;
+        }
+        section {
+            background-color: #2d3748;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            page-break-inside: avoid;
+        }
+        pre {
+            background-color: #4a5568;
+            border-radius: 4px;
+            padding: 15px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: #4a5568;
+            border-radius: 4px;
+            padding: 15px;
+        }
+        .icon-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .icon-list li {
+            margin-bottom: 10px;
+        }
+        .icon-list i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+        }
+        @media print {
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fab fa-python"></i> Python Course - Day 004: Variables and Code Execution</h1>
+
+        <section>
+            <h2><i class="fas fa-code"></i> 007_ Variables Part 1: Fundamentals</h2>
+            <p>In Python, variables are used to store and manipulate data. They act as containers for values that can be changed throughout your program.</p>
+            
+            <h3><i class="fas fa-pencil-alt"></i> Variable Declaration Syntax</h3>
+            <pre><code>variable_name = value</code></pre>
+            <p>This syntax assigns the <code>value</code> to the <code>variable_name</code>. Python uses dynamic typing, which means you don't need to declare the variable type explicitly.</p>
+
+            <h3><i class="fas fa-list-ul"></i> Name Convention and Rules</h3>
+            <ul class="icon-list">
+                <li><i class="fas fa-check"></i>Can start with letters (a-z, A-Z) or underscore "_"</li>
+                <li><i class="fas fa-times"></i>Cannot start with numbers (0-9) or special characters (@, -, %, etc.)</li>
+                <li><i class="fas fa-check"></i>Can include numbers (0-9) or underscore "_" after the first character</li>
+                <li><i class="fas fa-times"></i>Cannot include special characters anywhere in the name</li>
+                <li><i class="fas fa-exclamation-triangle"></i>Are case-sensitive (myVar and myvar are different variables)</li>
+            </ul>
+
+            <h3><i class="fas fa-star"></i> Best Practices for Variable Naming</h3>
+            <div class="grid">
+                <div class="grid-item">
+                    <strong>One word:</strong> Normal<br>
+                    Example: <code>name</code>
+                </div>
+                <div class="grid-item">
+                    <strong>Two words:</strong> camelCase<br>
+                    Example: <code>myName</code>
+                </div>
+                <div class="grid-item">
+                    <strong>Two or more words:</strong> snake_case<br>
+                    Example: <code>my_full_name</code>
+                </div>
+            </div>
+            <p>Choose descriptive names that reflect the purpose or content of the variable. This improves code readability and maintainability.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-laptop-code"></i> 008_ Variables Part 2: Code Execution Process</h2>
+            <p>Understanding how Python code is executed is crucial for effective programming. Here are key concepts related to code execution:</p>
+            
+            <ul class="icon-list">
+                <li><i class="fas fa-file-code"></i> <strong>Source code:</strong> The original code written by the programmer in a high-level language (like Python)</li>
+                <li><i class="fas fa-language"></i> <strong>Translation:</strong> The process of converting source code into machine language that the computer can understand and execute</li>
+                <li><i class="fas fa-cogs"></i> <strong>Compilation:</strong> A method where the entire source code is translated into machine code before runtime</li>
+                <li><i class="fas fa-clock"></i> <strong>Runtime:</strong> The period during which a program is executing its instructions</li>
+                <li><i class="fas fa-sync"></i> <strong>Interpreted:</strong> A method where code is translated line by line during execution, as opposed to being compiled all at once</li>
+            </ul>
+
+            <h3><i class="fas fa-lightbulb"></i> Python's Execution Model</h3>
+            <p>Python is typically described as an interpreted language, but it actually uses a hybrid approach:</p>
+            <ol>
+                <li>Python source code is first compiled to bytecode</li>
+                <li>This bytecode is then interpreted by the Python Virtual Machine (PVM) at runtime</li>
+            </ol>
+            <p>This approach combines some of the speed benefits of compilation with the flexibility of interpretation.</p>
+
+            <h3><i class="fas fa-magic"></i> Multiple Variable Assignment</h3>
+            <p>Python allows you to assign values to multiple variables in a single line:</p>
+            <pre><code>a, b, c = 1, 2, 3</code></pre>
+            <p>This is equivalent to:</p>
+            <pre><code>a = 1
+b = 2
+c = 3</code></pre>
+            <p>This feature, known as tuple unpacking, can make your code more concise and readable when working with related variables.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-graduation-cap"></i> Summary and Best Practices</h2>
+            <ul class="icon-list">
+                <li><i class="fas fa-check-circle"></i> Use descriptive variable names that indicate the purpose of the data</li>
+                <li><i class="fas fa-ruler"></i> Follow PEP 8 guidelines for naming conventions (snake_case for variables and functions)</li>
+                <li><i class="fas fa-balance-scale"></i> Balance between conciseness and clarity when naming variables</li>
+                <li><i class="fas fa-comments"></i> Use comments to explain complex logic or non-obvious variable purposes</li>
+                <li><i class="fas fa-redo"></i> Avoid reusing variable names in the same scope to prevent confusion</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

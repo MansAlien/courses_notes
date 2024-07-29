@@ -1,0 +1,45 @@
+#################################
+#########    Day 004    #########
+#################################
+
+==============================
+=== 007_ Variables Part 1 ===
+==============================
+
+- Syntax => [ Variable Name] = [ Value ]
+
+--------------------------
+Name Convention and Rules
+--------------------------
+1. Can start with (a-z A-Z) or unerscore "_"
+2. You can't start with num ( 0-9 ) or  special character(@, -, %, etc.)
+3. Can Include num ( 0-9 ) or underscore "_"
+4. Can't Include special characters
+5. Case Sensitive
+
+--------------
+Best Practices
+--------------
+one word => Normal => name
+Two word => camalCase => myName
+Two word => snake_case => my_name
+
+############################################################################################################
+
+==============================
+=== 008_ Variables Part 2 ====
+==============================
+
+- Source code : original code
+- Translation : Converting source code into Machine Language
+- Compilation : Translate the code before the run-time
+- run-time : Period of time that the app take to execute the commands
+- Interpreted : code Translated on the fly during execution
+
+
+- we can add multiple variable at the same time:
+  ```
+    a, b, c = 1, 2, 3
+  ```
+
+############################################################################################################

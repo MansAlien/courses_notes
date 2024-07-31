@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Course - Day 005</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #9f7aea;
+            text-align: center;
+        }
+        h2 {
+            color: #ed64a6;
+        }
+        h3 {
+            color: #b794f4;
+        }
+        section {
+            background-color: #2d3748;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        pre {
+            background-color: #4a5568;
+            border-radius: 4px;
+            padding: 15px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        .escape-sequence {
+            margin-bottom: 20px;
+        }
+        .escape-sequence h3 {
+            margin-bottom: 10px;
+        }
+        .escape-sequence code {
+            background-color: #4a5568;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+        @media print {
+            body {
+                background-color: #1a202c;
+                color: #e2e8f0;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            section {
+                background-color: #2d3748;
+                box-shadow: none;
+                border: 1px solid #4a5568;
+                page-break-after: always;
+                margin-top: 30px;
+            }
+            pre, .escape-sequence code {
+                background-color: #4a5568;
+                color: #e2e8f0;
+            }
+            h1 { color: #9f7aea; }
+            h2 { color: #ed64a6; }
+            h3 { color: #b794f4; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fab fa-python icon"></i>Python Course - Day 005</h1>
+
+        <section>
+            <h2><i class="fas fa-keyboard icon"></i>Special Characters and Escape Sequences in Python (Part 1)</h2>
+            <p>In Python, escape sequences are special combinations of characters that represent actions or characters that are difficult to type directly. They always start with a backslash (\) followed by a character or a set of characters. Here's a detailed explanation of common escape sequences and special characters:</p>
+            
+            <div class="escape-sequence">
+                <h3><i class="fas fa-quote-left icon"></i>Quotation Marks</h3>
+                <p><code>\'</code> and <code>\"</code>: These allow you to include single and double quotes within strings.</p>
+                <pre>
+print("He said, \"Hello!\"")  # Output: He said, "Hello!"
+print('It\'s a beautiful day')  # Output: It's a beautiful day
+                </pre>
+            </div>
+
+            <div class="escape-sequence">
+                <h3><i class="fas fa-backslash icon"></i>Backslash</h3>
+                <p><code>\\</code>: Represents a literal backslash character.</p>
+                <pre>
+print("This is a backslash: \\")  # Output: This is a backslash: \
+                </pre>
+            </div>
+
+            <div class="escape-sequence">
+                <h3><i class="fas fa-level-down-alt icon"></i>New Line and Carriage Return</h3>
+                <p><code>\n</code>: Inserts a new line.</p>
+                <p><code>\r</code>: Moves the cursor to the beginning of the current line (rarely used in Python).</p>
+                <pre>
+print("Hello\nWorld")
+# Output:
+# Hello
+# World
+
+print("Hello\rWorld")  # Output: World (overwrites "Hello")
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-keyboard icon"></i>Special Characters and Escape Sequences in Python (Part 2)</h2>
+            
+            <div class="escape-sequence">
+                <h3><i class="fas fa-indent icon"></i>Tab</h3>
+                <p><code>\t</code>: Inserts a horizontal tab.</p>
+                <pre>
+print("Name:\tJohn")  # Output: Name:    John
+                </pre>
+            </div>
+
+            <div class="escape-sequence">
+                <h3><i class="fas fa-eraser icon"></i>Backspace</h3>
+                <p><code>\b</code>: Moves the cursor one space back (rarely used in strings).</p>
+                <pre>
+print("Hello\bWorld")  # Output: HellWorld (erases 'o')
+                </pre>
+            </div>
+
+            <div class="escape-sequence">
+                <h3><i class="fas fa-code icon"></i>Unicode and Hex Characters</h3>
+                <p><code>\uXXXX</code>: Represents a Unicode character by its 4-digit hex value.</p>
+                <p><code>\xhh</code>: Represents a character by its 2-digit hex value.</p>
+                <pre>
+print("\u263A")  # Output: ☺ (smiley face)
+print("\x41")    # Output: A (ASCII character for 'A')
+                </pre>
+            </div>
+
+            <div class="escape-sequence">
+                <h3><i class="fas fa-long-arrow-alt-right icon"></i>Line Continuation</h3>
+                <p><code>\ + newline</code>: Allows a statement to continue on the next line.</p>
+                <pre>
+long_string = "This is a very long string that \
+continues on the next line"
+print(long_string)
+# Output: This is a very long string that continues on the next line
+                </pre>
+            </div>
+
+            <p>Understanding these special characters and escape sequences allows you to handle various text formatting scenarios and include special characters in your strings effectively.</p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-plus icon"></i>Concatenation in Python (Part 1)</h2>
+            <p>Concatenation in Python is the process of combining two or more strings into a single string. It's a fundamental operation when working with text data. Here's how you can perform concatenation in Python:</p>
+            
+            <h3><i class="fas fa-plus-circle icon"></i>Using the + Operator</h3>
+            <p>The simplest way to concatenate strings is by using the + operator:</p>
+            <pre>
+first_name = "John"
+last_name = "Doe"
+full_name = first_name + " " + last_name
+print(full_name)  # Output: John Doe
+            </pre>
+
+            <h3><i class="fas fa-percentage icon"></i>Using the % Operator (String Formatting)</h3>
+            <p>You can use the % operator for string formatting, which is a form of concatenation:</p>
+            <pre>
+name = "Alice"
+age = 30
+message = "My name is %s and I am %d years old" % (name, age)
+print(message)  # Output: My name is Alice and I am 30 years old
+            </pre>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-plus icon"></i>Concatenation in Python (Part 2)</h2>
+
+            <h3><i class="fas fa-braces icon"></i>Using the format() Method</h3>
+            <p>The format() method provides a more flexible way to concatenate strings:</p>
+            <pre>
+item = "apple"
+price = 1.99
+quantity = 3
+order = "I want {} {}s at ${} each".format(quantity, item, price)
+print(order)  # Output: I want 3 apples at $1.99 each
+            </pre>
+
+            <h3><i class="fas fa-magic icon"></i>Using f-strings (Python 3.6+)</h3>
+            <p>F-strings provide a concise and readable way to embed expressions inside string literals:</p>
+            <pre>
+name = "Bob"
+age = 25
+intro = f"Hi, I'm {name} and I'm {age} years old"
+print(intro)  # Output: Hi, I'm Bob and I'm 25 years old
+            </pre>
+
+            <p>These methods allow you to easily combine strings and other data types in Python, making your code more readable and efficient.</p>
+        </section>
+    </div>
+</body>
+</html>
